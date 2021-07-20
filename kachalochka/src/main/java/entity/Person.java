@@ -2,11 +2,20 @@ package entity;
 
 public abstract class Person {
 
+    protected Person(String name) {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
 
     private final String name;
 
-    public abstract void display();
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                '}';
+    }
 }

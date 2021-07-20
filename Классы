@@ -1,5 +1,5 @@
 package helloapp;
-// знаю что херь полная но пыпытка не пытка)
+
 public class Program{
 public static void main(String[] args){ 
 	
@@ -12,12 +12,11 @@ public static void main(String[] args){
 
 class Employee extends Person{
 	 
-    String Gym;
+    String gym;
      
     public Employee(String name, String company) {
-     
         super(name);
-        this.Gym = company;
+        this.gym = company;
     }
      
     public void display(){
@@ -29,6 +28,8 @@ class Employee extends Person{
 class Client extends Person
 {
      String Gym;
+     private Muscle[] muscles;
+     private List<Grafic> grafic;
      
     public Client(String name, String company) {
      
@@ -46,18 +47,18 @@ class Client extends Person
 class equipment{
 	  
     String name;
-    Type eqType;
+    Type equipmentType;
     
   
     equipment(String name, Type type){
           
-    	eqType = type;
+    	equipmentType = type;
         this.name = name;
         
     }
 }
   
-enum Type
+enum EquipmentType
 {
 	Weights,
 	Elliptical_machine,

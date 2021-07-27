@@ -1,8 +1,12 @@
 package entity;
 
+import java.util.List;
+
 public class Client extends Person {
 
-    String gym;
+    private Long money;
+    private List<Muscle> muscles;
+    private List<Graphic> graphic;
 
     public Client(String name, String company) {
         super(name);
